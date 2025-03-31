@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>www.corn.com</title>
+    <link rel="shortcut icon" href="favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Tint&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Varela+Round&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <!--for rating -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        body{
+            background-color: lightcyan;
+        }
+        .top{
+            display: flex;
+            justify-content: space-between;
+            align-items: end;
+            padding: 10px 20px;
+        }
+        img{
+            mix-blend-mode: normal;
+        }
+        #logo{
+            display: inline-block;
+            vertical-align: top;
+            mix-blend-mode: multiply;
+            
+        }
+        nav{
+            justify-content: flex-end;
+            display: inline-block;
+            padding: 15px 0;
+
+        }
+        nav a{
+            display: inline-block ;
+            background-color: yellowgreen;
+            color: white;
+            border-radius: 40px;
+            padding: 10px 20px;
+            margin: 5px;
+            font-size: larger;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+        nav a:hover{
+            background-color: darkgreen;
+        }
+   
+         h1{
+            font-family: "Ubuntu", sans-serif;
+            color: red;
+            font-style: normal;
+            text-decoration: solid;
+            text-align: center;
+        }
+        h2{
+            font-family: "Ubuntu", sans-serif;
+            color: solid black;
+            font-style: normal;
+            text-decoration: solid;
+            text-align: center;        
+        }
+        p{
+            font-family: "Press Start 2P", system-ui;
+            font-weight: 200;
+            font-style: normal;
+        }
+        #fonts{
+            font-family: "Ubuntu", sans-serif;
+            font-size: larger;
+        }
+        #overall{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 200px;
+        }
+        .models1{
+            max-width: 240px;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+            border-radius: 8px;
+            overflow: hidden;
+            margin-left: 70px;
+            transition: transform .2s; 
+        }
+        .models1 img{
+            height: 300px;
+            width: none;
+            border-radius: 10px;
+        }
+        .models2{
+            max-width: 240px;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+            border-radius: 8px;
+            overflow: hidden;
+            margin-left: 70px;
+            transition: transform .2s; 
+        }
+        .models2 img{
+            height: 300px;
+            width: none;
+            border-radius: 10px;   
+        }
+        .models3{
+            max-width: 240px;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+            border-radius: 8px;
+            overflow: hidden;
+            margin-left: 70px;
+            transition: transform .2s; 
+        }
+        .models3 img{
+            height: 300px;
+            width: none;
+            border-radius: 10px;   
+        }
+        #overall2{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 200px;
+        }
+        .models4{
+            max-width: 240px;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+            border-radius: 8px;
+            overflow: hidden;
+            margin-left: 70px;
+            transition: transform .2s; 
+        }
+        .models4 img{
+            height: 300px;
+            width: none;
+            border-radius: 10px;
+        }
+        .models5{
+            max-width: 240px;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+            border-radius: 8px;
+            overflow: hidden;
+            margin-left: 70px;
+            transition: transform .2s; 
+        }
+        .models5 img{
+            height: 300px;
+            width: none;
+            border-radius: 10px;   
+        }
+        .models6{
+            max-width: 240px;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+            border-radius: 8px;
+            overflow: hidden;
+            margin-left: 70px;
+            transition: transform .2s; 
+        }
+        .models6 img{
+            height: 300px;
+            width: none;
+            border-radius: 10px;   
+        }
+        .card-content{
+            text-align: center;
+        }
+        .checked {
+            color: orange;
+        }
+        .models1:hover{
+            transform: scale(1.5);
+        }
+        .models2:hover{
+            transform: scale(1.5);
+        }
+        .models3:hover{
+            transform: scale(1.5);
+        }
+        .models4:hover{
+            transform: scale(1.5);
+        }
+        .models5:hover{
+            transform: scale(1.5);
+        }
+        .models6:hover{
+            transform: scale(1.5);
+        }    
+        #last{
+            display: inline-block;
+            font-family: "Ubuntu", sans-serif;
+            color: solid black;
+            font-style: normal;
+            text-decoration: solid;
+            margin-left: 5px;
+        }
+        #root{
+            display: inline-block;
+            mix-blend-mode: multiply;
+            height: 35px;
+            float: inline-end;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="top">
+            <a href="index.html"><img src="8teenboy_logo.png" alt="site logo" id="logo"></a>
+            <nav class="heading">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="#">Contact</a>
+              
+            </nav>
+            
+        </div>
+    </header>    
+          <h1>CHOOSE THE BEST ONE ....</h1>
+          <marquee behavior="" direction="right"><h2 style="text-align: left;"> according to your need </h2></marquee>
+          <br><br>
+    <div id="overall">  
+          <!--Anurag Pannel-->
+        <div class="models1">
+            <a href="anurag.html"><img src="photos/anurag.jpg" alt="Anurag Image"></a>
+            <div class="card-content">
+                <p><b>Anurag Shukla</b></p>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <p id="fonts"><b>Age - 22</b></p>
+                <p id="fonts"><b>Good At - Turn On</b></p>
+            </div>
+        </div>    
+        <!--Saurav Pannel-->    
+        <div class="models2">
+            <a href="saurav.html"><img src="photos/saurav.jpg" alt="Saurav Image"></a>
+            <div class="card-content">
+                <p><b>Saurav</b></p>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <p id="fonts"><b>Age - 20</b></p>
+                <p id="fonts"><b>Good At - BlowJob </b></p>
+            </div>
+        </div>
+        <!--Smith -->
+        <div class="models3">
+            <a href="smith.html"><img src="photos/smith.jpg" alt="Smith Image"></a>
+            <div class="card-content">
+                <p><b>Smith</b></p>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <p id="fonts"><b>Age - 21</b></p>
+                <p id="fonts"><b>Good At - GangBang</b></p>
+            </div>
+        </div>           
+    </div>
+    <br><br><br><br>
+    <div id="overall2">
+        <!--Suraj Pannel-->
+        <div class="models4">
+            <a href="suraj.html"><img src="photos/suraj.jpg" alt="Suraj Image"></a>
+            <div class="card-content">
+                <p><b>Suraj Magar</b></p>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <p id="fonts"><b>Age - 23</b></p>
+                <p id="fonts"><b>Good At - Overall</b></p>
+            </div>
+        </div>       
+        <!--Tushar Pannel-->     
+        <div class="models5">
+            <a href="tushar.html"><img src="photos/tushar.jpg" alt="Tushar Image"></a>
+            <div class="card-content">
+                <p><b>Tushar</b></p>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <p id="fonts"><b>Age - 19</b></p>
+                <p id="fonts"><b>Good At - HandJob</b></p>
+            </div>
+        </div>
+        <!--Vivek Pannel -->
+        <div class="models6">
+            <a href="vivek.html"><img src="photos/vivek.jpg" alt="Vivek Image"></a>
+            <div class="card-content">
+                <p><b>Vivek</b></p>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <p id="fonts"><b>Age - 20</b></p>
+                <p id="fonts"><b>Good At - BlindFold </b></p>
+            </div>
+        </div>            
+    </div>
+    <br>
+    <div class="foot">
+    <footer>
+        <br><hr>
+        <section id="last">&copy; Powered by Spider</section>
+        <img src="/8teenboy_logo.png" id="root">
+    </footer>
+    </div>   
+</body>
+</html>
